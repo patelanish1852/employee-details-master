@@ -1,9 +1,9 @@
 package com.employeedetails.model;
 
 import com.employeedetails.dto.DepartmentDTO;
-import jakarta.persistence.*;
 import org.hibernate.annotations.Where;
 
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Where(clause = "status<>'DELETED'")
