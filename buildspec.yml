@@ -4,6 +4,7 @@ phases:
   build:
     commands:
       - echo Entered the build phase...
+      - cd /home/brilworks-41/Practise/employee_details/employee-details
       - rm -rf target  # Clean the target directory
       - mvn clean install -U
   post_build:
