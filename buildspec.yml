@@ -4,9 +4,8 @@ phases:
   build:
     commands:
       - echo Entered the build phase...
-      - cd /home/brilworks-41/Practise/employee_details/employee-details/pom.xml
-      - mvn clean package
-
+      - rm -rf target  # Clean the target directory
+      - mvn clean install -U
   post_build:
     commands:
       - echo Build completed successfully
